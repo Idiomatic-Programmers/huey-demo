@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mt3uk1!j7e-o^$vfps*el5nzi$5%2*l%r)jm#hwsudcxei1oc6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -128,3 +128,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 WORDNIK_API_KEY = os.environ.get("WORDNIK_API_KEY")
+
+# Needed for the debug mode of Huey to work
+HUEY = {}
