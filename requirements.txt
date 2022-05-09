@@ -1,0 +1,4 @@
+Django==4.0.4
+redis==4.2.2
+huey==2.4.3
+requests==2.25.1
